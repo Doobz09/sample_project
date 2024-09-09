@@ -1,0 +1,13 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "files.associations": {
+    "gpio.h": "c",
+    "stdio.h": "c",
+    "freertos.h": "c",
+    "hal.h": "c",
+    "uart.h": "c"
+  },
+  "idf.flashType": "UART",
+  "idf.portWin": "COM6",
+  "idf.adapterTargetName": "esp32"
+}
