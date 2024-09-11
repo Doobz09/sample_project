@@ -1,6 +1,6 @@
 #ifndef _HAL_H_
 #define _HAL_H_
-#define PIC18
+#define ESP32
 #include "../bsp/bsp.h"
 #if !defined(ESP32) && !defined(PIC18)
     #error "Debe definirse la macro ESP32 o PIC18 para compilar correctamente."
