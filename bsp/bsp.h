@@ -2,6 +2,8 @@
 #define _BSP_H_
 #include <driver/gpio.h>
 #include<driver/uart.h>
+#include <driver/adc.h>
+
 #include "string.h"
 
 enum LEDS{
@@ -37,17 +39,7 @@ typedef enum MODE{
 #define BUF_SIZE (1024)
 extern char mensaje[100];
 
-//Funciones
-void set_gpio(GPIOS pin,int level);
-void bsp_gpio_mode(GPIOS gpio, MODE mode);
-bool read_gpio(GPIOS gpio);
-void bsp_terminal_init();
 
-void bsp_uart_config(int uart_num, int baudrate, int data_bits, int paridad, int stop_bits, int flow_ctrl);
-
-void bsp_uart_send(const char *mensaje);
-
-void bsp_led_set_level(bool level);
 
 
 

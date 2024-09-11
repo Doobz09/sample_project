@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "main",
-    "project_version":    "1",
+    "project_version":    "d85b9da-dirty",
     "project_path":       "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project",
     "idf_path":           "C:/ESP32/esp-idf",
     "build_dir":          "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build",
@@ -790,7 +790,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/main/main.c", "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/bsp/bsp.c", "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/hal/hal.c" ],
+            "sources": [ "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/main/main.c", "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/hal/hal.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
