@@ -14,10 +14,12 @@ void uart_init();
 
 #define STACK_SIZE 1024
 void vTaskEntradas(void* pvParameters); 
+void vTaskTerminal(void* pvParameters); 
 esp_err_t create_tasks(void);                   /*DECLARACION DE LA FUNCION QUE CREARA LAS 3 TAREAS QUE INVOCARAN LAS FUNCIONES DE ARRIBA DECLARADAS*/
 
 int count_btn=0;
 bool sistema_on = false;
+int value_adc = 0;
 
 void app_main(void)
 {
@@ -27,7 +29,7 @@ void app_main(void)
 
     int count_btn=0;
     bool adc_on = false;
-    int value_adc = 0;
+    
     create_tasks();
 
  
@@ -36,8 +38,7 @@ void app_main(void)
         if(sistema_on==true){
             hal_led_set_level(1);
             value_adc = hal_read_adc(ADC1_CHANNEL_4);
-            sprintf(state, "Valor ADC: %d\n",value_adc);
-            hal_uart_send(state);
+            
         }
         else{
             hal_led_set_level(0);
@@ -66,6 +67,13 @@ esp_err_t create_tasks(void){
 
     xTaskCreate(vTaskEntradas,                           /*Funcion que va a llamar*/
                 "vTaskEntradas",                         /*Nombre de la funcion que va a llamar*/
+                STACK_SIZE,                              /*Memoria que asignaremos*/
+                 &ucParameterToPass,
+                 1,                                      /*prioridad*/
+                 &xHandle);
+
+    xTaskCreate(vTaskTerminal,                           /*Funcion que va a llamar*/
+                "vTaskTerminal",                         /*Nombre de la funcion que va a llamar*/
                 STACK_SIZE,                              /*Memoria que asignaremos*/
                  &ucParameterToPass,
                  1,                                      /*prioridad*/
@@ -102,6 +110,18 @@ void vTaskEntradas(void* pvParameters){
         }
         
         vTaskDelay(pdMS_TO_TICKS(50));
+    }
+
+}
+
+void vTaskTerminal(void* pvParameters){
+    while(1){
+    if(sistema_on==true){
+        sprintf(state, "Valor ADC: %d\n",value_adc);
+        hal_uart_send(state);
+
+    }
+    vTaskDelay(pdMS_TO_TICKS(50));
     }
 
 }

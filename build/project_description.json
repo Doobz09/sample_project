@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "main",
-    "project_version":    "e1b91ad-dirty",
+    "project_version":    "e8b6ff0-dirty",
     "project_path":       "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project",
     "idf_path":           "C:/ESP32/esp-idf",
     "build_dir":          "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build",
