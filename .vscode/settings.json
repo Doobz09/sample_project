@@ -6,7 +6,12 @@
     "freertos.h": "c",
     "hal.h": "c",
     "uart.h": "c",
-    "bsp.h": "c"
+    "bsp.h": "c",
+    "version.h": "c",
+    "task.h": "c",
+    "adc.h": "c",
+    "init_functions.h": "c",
+    "terminal.h": "c"
   },
   "idf.flashType": "UART",
   "idf.portWin": "COM6",
