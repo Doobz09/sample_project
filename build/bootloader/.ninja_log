@@ -213,3 +213,12 @@
 25025	25304	0	C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	eae9f4bdbe59458c
 14	160	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	eae9f4bdbe59458c
 14	160	0	C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	eae9f4bdbe59458c
+17	358	7478559398886973	esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj	cd9e89a13a1dbd1c
+25	476	7478559400146713	esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj	2c19db6470fc80ef
+478	838	7478559403258143	esp-idf/bootloader_support/libbootloader_support.a	3be382f0553fa380
+839	1128	7478559406318342	esp-idf/esp_app_format/libesp_app_format.a	f03cfb60bdbe0b2c
+1129	2060	7478559415669746	bootloader.elf	63458110b3e587ed
+2060	2624	7478559421633089	.bin_timestamp	3eed26fbdd6f1f03
+2060	2624	7478559421633089	C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build/bootloader/.bin_timestamp	3eed26fbdd6f1f03
+2625	2817	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	eae9f4bdbe59458c
+2625	2817	0	C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	eae9f4bdbe59458c

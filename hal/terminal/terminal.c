@@ -26,15 +26,14 @@ void hal_terminal_send(const char *mensaje){
 
 #ifdef PIC18
 
-void hal_adc_config(int canal,int puerto){
-   setup_adc_ports(puerto);
-   setup_adc(ADC_CLOCK_INTERNAL);
-   set_adc_channel(canal);
+void hal_comunicacion_terminal_config(){
+   lcd_init();
 }
 
-int8 hal_read_adc(int channel){
-   set_adc_channel(channel);
-   return read_adc();
-
+void hal_terminal_send(char* mensaje){
+   lcd_putc("\f");  // Comando para limpiar la pantalla LCD
+   lcd_gotoxy(1,1);
+   printf(lcd_putc,mensaje);
+  
 }
 #endif
