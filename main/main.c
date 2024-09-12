@@ -11,7 +11,7 @@ char state[100];
 
 void app_main(void)
 {
-    gpio_init();
+    gpio_init();//iniciamos los gpios
     adc_init();
     uart_init();
 
