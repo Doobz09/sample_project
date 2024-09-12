@@ -1,8 +1,13 @@
 #ifndef _BSP_H_
 #define _BSP_H_
+#include "../main/version.h"
 #include <driver/gpio.h>
 #include<driver/uart.h>
 #include <driver/adc.h>
+#include "../hal/gpio/gpio.h"
+#include "../hal/adc/adc.h"
+#include "../hal/terminal/terminal.h"
+#include "../init_functions/init_functions.h"
 
 #include "string.h"
 
