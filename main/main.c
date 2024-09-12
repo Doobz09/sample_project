@@ -12,8 +12,8 @@ char state[100];
 void app_main(void)
 {
     gpio_init();//iniciamos los gpios
-    adc_init();
-    uart_init();
+    adc_init(); //iniciamos el adc
+    uart_init();//iniciamos la comunicacion
 
     int count_btn=0;
     bool adc_on = false;
