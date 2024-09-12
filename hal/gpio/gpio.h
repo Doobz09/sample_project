@@ -5,7 +5,7 @@
 
 #ifdef ESP32
 void hal_gpio_mode(int gpio, int mode);
-void hal_led_set_level(bool state);
+void hal_led_set_level(int gpio,bool state);
 bool hal_btn_read(int gpio);
 void hal_gpio_set_pullup(int gpio);
 

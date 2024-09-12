@@ -2,7 +2,6 @@
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h> 
 #include "../bsp/bsp.h"
-//#include "../hal/hal.h"
 
 
 
@@ -19,7 +18,6 @@ void app_main(void)
     int count_btn=0;
     bool adc_on = false;
     int value_adc = 0;
-
  
     while (1)
     {
@@ -27,21 +25,21 @@ void app_main(void)
             while(hal_btn_read(BTN1)==0);
             count_btn++;
             if((count_btn & 1)==1){
-                hal_led_set_level(1);
+                hal_led_set_level(LED4,1);
                 adc_on = true;
                 
             }
                 
             else{
-                 hal_led_set_level(0);
+                 hal_led_set_level(LED4,0);
                  adc_on=false;
-                 hal_uart_send("No_Disponible\n");
+                 hal_terminal_send("No_Disponible\n");
             }
         }
         if(adc_on){
             value_adc = hal_read_adc(ADC1_CHANNEL_4);
             sprintf(state, "Valor ADC: %d\n",value_adc);
-            hal_uart_send(state);
+            hal_terminal_send(state);
             
         }
        

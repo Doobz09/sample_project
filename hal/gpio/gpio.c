@@ -12,8 +12,8 @@ void hal_gpio_mode(int gpio, int mode){
         gpio_set_direction(gpio,GPIO_MODE_INPUT);
     }
 }
-void hal_led_set_level(bool state){
-    gpio_set_level(LED4,state);
+void hal_led_set_level(int gpio,bool state){
+    gpio_set_level(gpio,state);
 }
 bool hal_btn_read(int gpio){
 

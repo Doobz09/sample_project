@@ -6,8 +6,8 @@
 #ifdef ESP32
 
 //funciones uart
-void hal_uart_config(int uart_num, int baudrate, int data_bits, int paridad, int stop_bits, int flow_ctrl);
-void hal_uart_send(const char *mensaje);
+void hal_comunicacion_terminal_config(int uart_num, int baudrate, int data_bits, int paridad, int stop_bits, int flow_ctrl);
+void hal_terminal_send(const char *mensaje);
 
 #endif
 
