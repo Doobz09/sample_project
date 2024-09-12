@@ -1,0 +1,78 @@
+
+ROM used:   1324/32768 (4%)
+            1328/32768 (4%) including unused fragments
+
+            0.8 Average locations per line
+            9.5 Average locations per statement
+
+RAM used:   8/2048 (0%) at main() level
+            24/2048 (1%) worst case
+
+Stack used: 5 worst case (5 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   80    31  22  main.c
+  171    25  18  bsp.c
+  837     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18f4550.h
+  157     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb_bootloader.h
+    8     0   0  select_version.c
+  456    84  60  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+----- -----
+ 1709   140 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   1    1             @delay_ms1
+0     66   2    3    596  5.9  lcd_read_byte
+0     12   0    0     59  4.2  lcd_read_nibble
+0     34   1    1    179  3.3  lcd_send_nibble
+0     58   2    3    460  4.7  lcd_send_byte
+0    120   5    6    814  7.2  lcd_init
+0     34   1    4    208  6.3  lcd_gotoxy
+0     80   3    1    354  4.7  lcd_putc
+0     38   1    2    221  4.3  hal_gpio_mode
+0     78   3    2    112  3.2  hal_led_set_level
+0     62   2    6    119  0.7  @WRITEBITA
+0     16   1    1     57  2.3  hal_btn_read
+0      6   0    0     12  0.8  hal_comunicacion_terminal_config
+0     30   1    2     88  1.9  hal_terminal_send
+0      2   0    0     57  2.3  @const724
+0     34   1    2     12  0.8  @PSTRINGC_672
+0     38   1    2     88  1.9  @PSTRINGR_672
+0     50   2    6     74  1.8  hal_adc_config
+0     32   1    1     40  1.7  hal_read_adc
+0    178   7    1    691  5.4  MAIN
+0     14   1    0     74  1.8  @const742
+0     28   1    1     40  1.7  @SPRINTF
+0     34   1    2    691  5.4  @PSTRINGC_744
+0     16   1    0             @const747
+0     32   1    3             @PSTRINGCN_744
+0     40   2    3             @DIV88
+0    104   4    2             @PRINTF_U_744
+0     28   1    0     78  1.6  gpio_init
+0     12   0    0     25  1.2  adc_init
+0      6   0    0     12  0.8  uart_init
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               25
+    Statements              140
+    Comments                292
+    Volume (V)              9225
+    Difficulty (D)          75.7
+    Effort to implement (E) 697915
+    Time to implement (T)   10 hours, 46 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   22
+    Maintainability (MI)    70
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-01FFE     0  8192  
+02000-02006     4  4  
+02008-07FFE  1320  23248  
+
+
+

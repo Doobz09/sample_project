@@ -1,0 +1,11 @@
+#include <bsp.c>
+
+void main()
+{
+
+   while(TRUE)
+   {
+      delay_ms(50);
+   }
+
+}

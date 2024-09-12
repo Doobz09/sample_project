@@ -1,0 +1,33 @@
+#ifndef _HAL_C
+#define _HAL_C
+#include <bsp.c>
+#ifdef ESP32
+void hal_gpio_mode(int pin, int mode){
+
+   if(pin>=D0 && pin<=D7){
+      set_tris_d(mode);
+   }
+   if(pin>=B0 && pin<=B7){
+   set_tris_b(mode);
+   }
+   if(pin==BTN1){
+      set_tris_b(mode);
+   }
+   
+   
+}
+
+
+
+#endif
+
+
+
+#ifdef PIC18
+
+
+
+sdfdsfd
+#endif
+
+#endif

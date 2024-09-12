@@ -1,0 +1,68 @@
+ÀÄmain
+   ÀÄMAIN  0/178  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄgpio_init  0/28  Ram=0
+      ³  ÃÄhal_gpio_mode  0/38  Ram=2
+      ³  ÃÄhal_gpio_mode  0/38  Ram=2
+      ³  ÀÄhal_led_set_level  0/78  Ram=2
+      ³     ÃÄ@WRITEBITA  0/62  Ram=6
+      ³     ÃÄ@WRITEBITA  0/62  Ram=6
+      ³     ÃÄ@WRITEBITA  0/62  Ram=6
+      ³     ÀÄ@WRITEBITA  0/62  Ram=6
+      ÃÄadc_init  0/12  Ram=0
+      ³  ÀÄhal_adc_config  0/50  Ram=6
+      ÃÄuart_init  0/6  Ram=0
+      ³  ÀÄhal_comunicacion_terminal_config  0/6  Ram=0
+      ³     ÀÄlcd_init  0/120  Ram=6
+      ³        ÃÄ@delay_ms1  0/38  Ram=1
+      ³        ÃÄlcd_send_nibble  0/34  Ram=1
+      ³        ÃÄ@delay_ms1  0/38  Ram=1
+      ³        ÃÄlcd_send_nibble  0/34  Ram=1
+      ³        ÃÄ@delay_ms1  0/38  Ram=1
+      ³        ÀÄlcd_send_byte  0/58  Ram=3
+      ³           ÃÄlcd_read_byte  0/66  Ram=3
+      ³           ³  ÃÄlcd_read_nibble  0/12  Ram=0
+      ³           ³  ÀÄlcd_read_nibble  0/12  Ram=0
+      ³           ÃÄlcd_send_nibble  0/34  Ram=1
+      ³           ÀÄlcd_send_nibble  0/34  Ram=1
+      ÃÄhal_btn_read  0/16  Ram=1
+      ÃÄhal_btn_read  0/16  Ram=1
+      ÃÄhal_led_set_level  0/78  Ram=2
+      ³  ÀÄ*
+      ÃÄhal_led_set_level  0/78  Ram=2
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_744  0/34  Ram=2
+      ³  ÀÄ@SPRINTF  0/28  Ram=1
+      ÃÄhal_terminal_send  0/30  Ram=2
+      ³  ÃÄ@PSTRINGC_672  0/34  Ram=2
+      ³  ³  ÀÄlcd_putc  0/80  Ram=1
+      ³  ³     ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ³     ³  ÀÄlcd_send_byte  0/58  Ram=3
+      ³  ³     ³     ÀÄ*
+      ³  ³     ÃÄlcd_send_byte  0/58  Ram=3
+      ³  ³     ³  ÀÄ*
+      ³  ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³     ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ³     ³  ÀÄ*
+      ³  ³     ÃÄlcd_send_byte  0/58  Ram=3
+      ³  ³     ³  ÀÄ*
+      ³  ³     ÀÄlcd_send_byte  0/58  Ram=3
+      ³  ³        ÀÄ*
+      ³  ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÀÄ@PSTRINGR_672  0/38  Ram=2
+      ³     ÀÄlcd_putc  0/80  Ram=1
+      ³        ÀÄ*
+      ÃÄhal_read_adc  0/32  Ram=1
+      ÃÄ@PSTRINGCN_744  0/32  Ram=3
+      ³  ÀÄ@SPRINTF  0/28  Ram=1
+      ÃÄ@PRINTF_U_744  0/104  Ram=2
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄ@SPRINTF  0/28  Ram=1
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄ@SPRINTF  0/28  Ram=1
+      ³  ÀÄ@SPRINTF  0/28  Ram=1
+      ÃÄ@SPRINTF  0/28  Ram=1
+      ÃÄhal_terminal_send  0/30  Ram=2
+      ³  ÀÄ*
+      ÀÄ@delay_ms1  0/38  Ram=1

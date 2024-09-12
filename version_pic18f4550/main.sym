@@ -1,0 +1,149 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     mensaje
+005-006 @sprintf_string
+007     MAIN.count_btn
+008     MAIN.adc_on
+009     MAIN.value_adc
+00A-00B hal_terminal_send.mensaje
+00A     @PRINTF_U_744.P1
+00A     hal_led_set_level.puerto
+00A     lcd_init.i
+00A     hal_gpio_mode.pin
+00A     hal_adc_config.canal
+00A     hal_btn_read.btn
+00A     @PSTRINGCN_744.P1
+00A     hal_read_adc.channel
+00A     MAIN.@SCRATCH1
+00A     @PSTRINGC_744.@SCRATCH1
+00B     hal_gpio_mode.mode
+00B-00E lcd_init.LCD_INIT_STRING
+00B     hal_led_set_level.state
+00B     @PRINTF_U_744.P1
+00B     hal_adc_config.puerto
+00B     @PSTRINGC_744.@SCRATCH2
+00B     @PSTRINGCN_744.@SCRATCH1
+00C     @WRITEBITA.P1
+00C     @DIV88.P2
+00C     @PSTRINGC_672.@SCRATCH1
+00C     @PSTRINGR_672.@SCRATCH1
+00C     hal_adc_config.@SCRATCH1
+00C     @PSTRINGCN_744.@SCRATCH2
+00D     @WRITEBITA.P1
+00D     @DIV88.P2
+00D     @SPRINTF.P3
+00D     @PSTRINGC_672.@SCRATCH2
+00D     @PSTRINGR_672.@SCRATCH2
+00D     hal_adc_config.@SCRATCH2
+00E-00F @WRITEBITA.P1
+00E     lcd_putc.c
+00E     hal_adc_config.@SCRATCH3
+00E     @DIV88.@SCRATCH1
+00F     @delay_ms1.P1
+00F     lcd_gotoxy.x
+00F     lcd_init.@SCRATCH1
+00F     hal_adc_config.@SCRATCH4
+010     lcd_gotoxy.y
+011     lcd_gotoxy.address
+012     lcd_gotoxy.@SCRATCH1
+013     lcd_send_byte.address
+014     lcd_send_byte.n
+015     lcd_read_byte.low
+015     lcd_send_byte.@SCRATCH1
+016     lcd_read_byte.high
+016     lcd_send_nibble.n
+017     lcd_read_byte.@SCRATCH1
+F83     PSP_DATA
+F83     lcd
+F8C     lcdlat
+F95     lcdtris
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+002008  @const724.call
+00200A  @const742.call
+002018  @const747.call
+002028  hal_gpio_mode
+00204E  @WRITEBITA
+00208C  hal_led_set_level
+0020DA  gpio_init
+0020F6  hal_adc_config
+002128  adc_init
+002134  @delay_ms1
+00215A  lcd_send_nibble
+00217C  lcd_read_nibble
+002188  lcd_read_byte
+0021CA  lcd_send_byte
+002204  lcd_init
+00227C  hal_comunicacion_terminal_config
+002282  uart_init
+002288  hal_btn_read
+002298  @SPRINTF
+0022B4  @PSTRINGC_744
+0022D6  lcd_gotoxy
+0022F8  lcd_putc
+002348  @PSTRINGC_672
+00236A  @PSTRINGR_672
+002390  hal_terminal_send
+0023AE  hal_read_adc
+0023CE  @PSTRINGCN_744
+0023EE  @DIV88
+002416  @PRINTF_U_744
+00247E  @cinit1
+00247E  MAIN
+002492  @cinit2
+
+Project Directory:
+    C:\Users\mende\Desktop\DSEI\PIC18F4550\version_pic18f4550\
+
+Project Files:
+    main.c                                                  [11-sep.-24 22:40  CRC=93359E3C]
+    bsp.c                                                   [11-sep.-24 22:42  CRC=28CDC9DB]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18f4550.h [18-abr.-14 16:57  CRC=68697302]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\usb_bootloader.h [09-oct.-13 13:43  CRC=173DC191]
+    select_version.c                                        [11-sep.-24 22:40  CRC=D872A938]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c [19-sep.-13 15:38  CRC=D1A6378A]
+
+Source signature=B769B4F6
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

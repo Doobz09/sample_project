@@ -1,0 +1,23 @@
+#define PIC18
+
+#if !defined(ESP32) && !defined(PIC18)
+    #error "Debe definirse la macro ESP32 o PIC18 para compilar correctamente."
+#endif
+
+void gpio_init(){
+    //ENTRADAS
+    hal_gpio_mode(BTN1,INPUT);
+
+    //SALIDAS
+    hal_gpio_mode(LED3,OUTPUT);
+    hal_led_set_level(LED3,LOW);
+}
+void adc_init(){
+   // hal_adc_init();
+    hal_adc_config(CHANNEL_0,AN0);
+
+}
+
+void uart_init(){
+    hal_comunicacion_terminal_config();
+}

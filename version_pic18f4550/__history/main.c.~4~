@@ -1,0 +1,14 @@
+#include <18f4550.h>
+#include <usb_bootloader.h> // Necesario por el bootloader
+#use delay(clock=20M)
+#fuses HS,NOWDT,NOPROTECT,NOLVP
+
+void main()
+{
+
+   while(TRUE)
+   {
+      delay_ms(50);
+   }
+
+}
