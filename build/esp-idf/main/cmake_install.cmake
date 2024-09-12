@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/main
+# Install script for directory: C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/Trabajo_PIC18_ESP32/sample_project/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

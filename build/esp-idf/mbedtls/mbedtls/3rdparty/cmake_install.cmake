@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake")
-  include("C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake")
+  include("C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/Trabajo_PIC18_ESP32/sample_project/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake")
+  include("C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/Trabajo_PIC18_ESP32/sample_project/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake")
 
 endif()
 

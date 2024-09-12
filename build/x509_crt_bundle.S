@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/GPIOS/sample_project/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/Trabajo_PIC18_ESP32/sample_project/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
