@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "main",
-    "project_version":    "8c9f260-dirty",
+    "project_version":    "d42b1bb-dirty",
     "project_path":       "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/Trabajo_PIC18_ESP32/DSEI_ESP32_PIC18F4550/ESP32",
     "idf_path":           "C:/ESP32/esp-idf",
     "build_dir":          "C:/Users/mende/Desktop/DSEI/Tarea_2/esp32_vs/Trabajo_PIC18_ESP32/DSEI_ESP32_PIC18F4550/ESP32/build",
